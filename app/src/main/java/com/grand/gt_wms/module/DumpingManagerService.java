@@ -1,5 +1,5 @@
 package com.grand.gt_wms.module;
-/*
+/**
  * 此service主要用于下阶报废的逻辑处理
  */
 import android.app.Service;
