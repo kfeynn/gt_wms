@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_back">
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="姓名：" />
+
+        <View
+            style="@style/line"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/employee"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:text="工号：" />
+
+        <View
+            style="@style/line"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="邮箱：" />
+
+        <View
+            style="@style/line"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:textSize="30dp"
+        android:text="修改密码" />
+    <Button
+        android:id="@+id/btn_log_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:textSize="30dp"
+        android:text="退出登录" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="版本号：" />
+    </RelativeLayout>
+
+
+</LinearLayout>

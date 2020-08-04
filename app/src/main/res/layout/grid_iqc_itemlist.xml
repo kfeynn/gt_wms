@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip" >
+
+    <!--整个布局-->
+    <LinearLayout
+        android:id="@+id/linearLayout_iqc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qct03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:text="行序"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_azf03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:text="检验项目"
+                android:textSize="15.0sp" />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_qct11"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:text="检验数"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qct07"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:text="不良数量："
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/et_qct07"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number|numberDecimal"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:background="@drawable/edit_corner"
+                android:textSize="15.0sp" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qct08"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:gravity="center"
+                android:text="判断结果:"
+                android:textSize="15.0sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogrounp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                >
+                <RadioButton
+                    android:id="@+id/rbt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="合格" />
+
+                <RadioButton
+                    android:id="@+id/rbt_ng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="不合格" />
+
+        </RadioGroup>
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qctud02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:text="技术标准："
+                android:textSize="15.0sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ta_qctt01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:text="检验记录："
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/et_ta_qctt01"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:background="@drawable/edit_corner"
+                android:textSize="15.0sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        style="@style/line"/>
+</FrameLayout>

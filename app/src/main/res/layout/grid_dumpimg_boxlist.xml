@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip" >
+
+    <!--整个布局-->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5.0dip"
+        android:background="@layout/bg_group"
+        android:orientation="vertical" >
+
+        <!--产品名称显示-->
+        <TextView
+            android:id="@+id/tv_sfl03"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:text="料号"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_ima02"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:gravity="center"
+            android:text="品名"
+            android:textSize="15.0sp" />
+        <TextView
+            android:id="@+id/tv_sfl07"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:gravity="center"
+            android:text="本次报废数量"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FFFFFF"/>
+</FrameLayout>

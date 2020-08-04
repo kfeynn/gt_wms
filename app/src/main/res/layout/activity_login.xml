@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="欢迎登录WMS"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="用户名"
+        app:layout_marginTopPercent="60%w"
+        android:textSize="@dimen/text_size"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:background="@drawable/edit_corner"
+        app:layout_widthPercent="70%w"
+        />
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="密码"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:background="@drawable/edit_corner"
+        app:layout_widthPercent="70%w"
+        android:password="true"
+        />
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="@dimen/text_size"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_select"
+        android:layout_marginTop="10dp"
+        app:layout_widthPercent="70%w"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView android:id="@+id/miniTwitter_logo"
+            android:src="@drawable/grand_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/miniTwitter_logo"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>
