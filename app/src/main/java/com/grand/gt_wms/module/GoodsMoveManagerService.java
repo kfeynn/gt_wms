@@ -38,6 +38,7 @@ public class GoodsMoveManagerService implements wmsBroadcastReceiver.HalGoodsMov
     private Context context;
     private String qr_data;
 
+    //
     public GoodsMoveManagerService(Context context) {
         this.context = context;
         wmsBroadcastReceiver.getInstance().registerHalGoodsMoveCallback(this);
